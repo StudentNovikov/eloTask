@@ -1,38 +1,47 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #ccc;
 }
 
-form{
-    padding:3rem;
+/* Form styles */
+
+form {
+    padding: 3rem;
 }
 
-form textarea, form input{
-    display:block;
+form textarea {
+    display: block;
 }
 
-form input{
-    margin-bottom:1rem;
+form input {
+    margin-bottom: 1rem;
 }
-#flag{
+
+button {
+    padding: 0.2rem;
+}
+
+/* Flag styles */
+
+#flag {
     width: 80px;
     height: 60px;
     overflow: hidden;
 }
 
-.white{
-    color:white;
+.white {
+    color: white;
 }
 
-.blue{
+.blue {
     color: blue;
 }
 
-.red{
-    color:red;
+.red {
+    color: red;
 }
