@@ -9,8 +9,35 @@
 </head>
 
 <body>
-    <h1>Test</h1>
-    <script src="src/js/main.js"></script>
+    <div id="flag">
+        <p class="white">OOOOOOOOOOOOOOOOOO</p>
+        <p class="blue">OOOOOOOOOOOOOOOOOOO</p>
+        <p class="red">OOOOOOOOOOOOOOOOOOO</p>
+    </div>
+
+    <form action="#">
+        <div>
+            <label for="fname">ФИО:</label>
+            <input type="text" id="fname" name="fname" placeholder="Введите ФИО">
+        </div>
+        <div id="numberSection">
+            <div>
+                <label for="lnumber1">Телефон:</label>
+                <input type="number" value="" id="lnumber1" name="lnumber" placeholder="Введите телефон">
+                <button class="addNewNumber">+</button>
+            </div>
+        </div>
+        <div>
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" rows="4" cols="50" placeholder="Напишите свой комментарий здесь..."></textarea>
+        </div>
+        <input type="submit" id="submitBtn" value=" Отправить">
+    </form>
+
+    <script src="./src/js/tasks/1/sortingFunction.js" type="module"></script>
+    <script src="./src/js/tasks/4/addNumberButton.js"></script>
+    <script src="./src/js/tasks/5/Person.js" type="module"></script>
+    <script src="./src/js/main.js" type="module"></script>
 </body>
 
 </html>
