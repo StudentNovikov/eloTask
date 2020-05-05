@@ -1,12 +1,17 @@
 let counter = 1;
-document.querySelector('#fioNumberSection').addEventListener('click', (e) => {
+document.querySelector('#numberSection').addEventListener('click', (e) => {
+
     if (e.target.classList.contains("addNewNumber")) {
+        counter++;
         e.target.style.display = 'none';
-        const newTelephone = `<div>
-        <label for="lnumber">Телефон ${++counter}:</label>
-        <input type="number" id="lnumber" name="lnumber" placeholder="Введите телефон">
+        const newTelephone = `
+        <label for="lnumber${counter}">Телефон ${counter}:</label>
+        <input type="number" value="" id="lnumber${counter}" name="lnumber" placeholder="Введите телефон">
         <button class="addNewNumber">+</button>
-    </div>`;
-        document.getElementById('fioNumberSection').innerHTML += newTelephone;
+    `;
+        const node = document.createElement('div');
+        node.innerHTML = newTelephone
+        document.getElementById('numberSection').appendChild(node);
+        e.preventDefault();
     }
 });
